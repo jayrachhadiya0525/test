@@ -1,0 +1,22 @@
+<h1>select-button works!</h1>
+<div class="card flex justify-content-center border-0">
+    <p-selectButton [options]="justifyOptions" [(ngModel)]="value" optionLabel="icon">
+        <ng-template let-item pTemplate>
+            <i [class]="item.icon"></i>
+        </ng-template>
+    </p-selectButton>
+</div><br><br>
+<div class="card flex justify-content-center border-0">
+    <form [formGroup]="formGroup">
+        <p-selectButton [options]="stateOptions" formControlName="value" optionLabel="label"
+            optionValue="value"></p-selectButton>
+    </form>
+</div><br><br>
+<h3>Toggle Button</h3>
+
+<div class="card flex justify-content-center border-0">
+    <p-toggleButton [(ngModel)]="checked" [onLabel]="'I confirm'" offLabel="I reject" [onIcon]="'pi pi-check'" offIcon="pi pi-times" [style]="{ width: '10em' }"></p-toggleButton>
+</div>
+<!-- <div class="card flex justify-content-center">
+    <p-toggleButton [(ngModel)]="checked" onLabel="Yes" offLabel="No"></p-toggleButton>
+</div> -->

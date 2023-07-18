@@ -1,0 +1,14 @@
+<h1>massage works!</h1>
+
+<!-- <div class="card">
+    <p-messages [(value)]="messages1" [enableService]="false" [closable]="false"></p-messages>
+    <p-messages [(value)]="messages2" [enableService]="false"></p-messages>
+</div> -->
+
+<h1>dynamic Message</h1>
+<div class="">
+    <button type="button" pButton pRipple (click)="addMessages()" label="Show" class="me-2"></button>
+    <button type="button" pButton pRipple (click)="clearMessages()" icon="pi pi-times" label="Clear"
+        class="p-button-secondary"></button>
+    <p-messages [(value)]="messages" [enableService]="false" [closable]="false"></p-messages>
+</div>

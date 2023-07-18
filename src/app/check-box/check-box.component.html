@@ -1,0 +1,12 @@
+<h1>check-box works!</h1>
+
+<div class="card flex justify-content-center border-0">
+    <div class="flex flex-column gap-2">
+        <div *ngFor="let category of categories" class="field-checkbox">
+            <p-checkbox name="group" [value]="category" [(ngModel)]="selectedCategories"
+                [inputId]="category.key"></p-checkbox>
+            <label [for]="category.key">{{ category.name }}</label>
+        </div>
+    </div>
+</div>
+
